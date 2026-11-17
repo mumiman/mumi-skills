@@ -4,7 +4,7 @@
     "name": "mumiman"
   },
   "metadata": {
-    "description": "Claude skills for field epidemiology, presentations, brainstorming, agent handoff, and human-style app testing (mostly Thai)."
+    "description": "Claude skills for field epidemiology, presentations, brainstorming, agent handoff, UX/UI design, web-app tutorials, and human-style app testing (mostly Thai)."
   },
   "plugins": [
     {
@@ -31,6 +31,16 @@
       "name": "real-human-tester",
       "source": "./plugins/real-human-tester",
       "description": "สวมบทเป็น \"คน\" ที่ไม่ perfect เข้าใช้ Web/Mobile app จริงทีละบทบาท แล้วให้ feedback หรือแก้แอปต่อเลย ใช้เมื่อผู้ใช้ขอทดสอบแอปในมุมผู้ใช้ ลองใช้แอปแทนผู้ใช้ ขอ feedback จากผู้ใช้จำลอง usability test หรือพิมพ์ /real-human-tester"
+    },
+    {
+      "name": "ux-ui-partner",
+      "source": "./plugins/ux-ui-partner",
+      "description": "Senior UX/UI design partner for evaluating digital products or ideating new features through a user-centered lens. Use whenever the user mentions UX, UI, usability, user flow, wireframe, prototype, persona, journey map, information architecture, navigation, accessibility, or the `/ux` command. Also trigger on asks to improve, critique, review, audit, or redesign any screen, app, feature, interaction, or component — or to design a new screen/feature to be user-friendly. Crucially, trigger on implicit UX asks in user-language without UX vocabulary — users abandoning a form, low CTA clicks, confusing or clunky flows, long forms, drop-off, friction, conversion problems, or \"how do I make this easier to use.\" Trigger on small UI decisions too (button color, spacing, microcopy); the skill stays brief when warranted. Do NOT trigger on non-UI uses of \"design\" like database schemas, system architecture, algorithms, logos or brand identity, or on technical writing like user manuals."
+    },
+    {
+      "name": "web-app-tutorial-creator",
+      "source": "./plugins/web-app-tutorial-creator",
+      "description": "Create evidence-grounded Thai or English web application tutorials from accessible URLs, HTML/source, screenshots, workflow descriptions or existing steps.json. Use for user manuals, walkthroughs, onboarding, product tours, annotated screenshot guides, Word tutorials, live DOM overlays or offline tutorial previews. Discover the application, propose a task journey, then generate and validate only the requested formats."
     }
   ]
 }

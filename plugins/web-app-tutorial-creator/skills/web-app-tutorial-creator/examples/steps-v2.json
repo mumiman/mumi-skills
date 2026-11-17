@@ -1,0 +1,82 @@
+{
+  "schema_version": 2,
+  "title": "สร้างรายงานฉบับร่าง",
+  "intro": "ตัวอย่างสำหรับทดสอบจากแอปจำลองที่แนบมา",
+  "language": "th",
+  "app_language": "en",
+  "prerequisites": [
+    "เปิด app.html ซึ่งเป็นข้อมูลสังเคราะห์สำหรับทดสอบ"
+  ],
+  "steps": [
+    {
+      "id": "open",
+      "title": "เปิดแบบฟอร์ม",
+      "goal": "เปิดแบบฟอร์ม",
+      "action": "กด “New report” เพื่อเปิดแบบฟอร์ม",
+      "instruction": "กด “New report” เพื่อเปิดแบบฟอร์ม",
+      "expected_result": "แสดงแบบฟอร์ม New report",
+      "target": {
+        "selector": "[data-tour=\"new-report\"]",
+        "timeout_ms": 3000
+      },
+      "depends_on": [],
+      "evidence": {
+        "kind": "source",
+        "source": "app.html#open",
+        "status": "verified",
+        "supports": [
+          "target",
+          "action"
+        ]
+      }
+    },
+    {
+      "id": "title",
+      "title": "กรอกชื่อรายงาน",
+      "goal": "กรอกชื่อรายงาน",
+      "action": "กรอกชื่อรายงานในช่อง “Report title”",
+      "instruction": "กรอกชื่อรายงานในช่อง “Report title”",
+      "expected_result": "มีชื่อรายงานในช่องกรอก",
+      "target": {
+        "selector": "#report-title",
+        "timeout_ms": 3000
+      },
+      "depends_on": [
+        "open"
+      ],
+      "evidence": {
+        "kind": "source",
+        "source": "app.html#title",
+        "status": "verified",
+        "supports": [
+          "target",
+          "action"
+        ]
+      }
+    },
+    {
+      "id": "save",
+      "title": "บันทึกฉบับร่าง",
+      "goal": "บันทึกฉบับร่าง",
+      "action": "กด “Save draft”",
+      "instruction": "กด “Save draft”",
+      "expected_result": "แสดงข้อความ Draft saved",
+      "target": {
+        "selector": "[data-tour=\"save-report\"]",
+        "timeout_ms": 3000
+      },
+      "depends_on": [
+        "title"
+      ],
+      "evidence": {
+        "kind": "source",
+        "source": "app.html#save",
+        "status": "verified",
+        "supports": [
+          "target",
+          "action"
+        ]
+      }
+    }
+  ]
+}

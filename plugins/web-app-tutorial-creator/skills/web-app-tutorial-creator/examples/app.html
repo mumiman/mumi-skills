@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Synthetic report fixture</title><style>body{font:18px system-ui;margin:24px}button,input{font:inherit;padding:12px;margin:8px}.scroll{height:160px;overflow:auto;border:1px solid #ccc}.spacer{height:400px}[hidden]{display:none!important}</style></head><body>
+<h1>Report workspace — synthetic fixture</h1><button data-tour="new-report" id="new-report">New report</button>
+<dialog id="editor"><h2>New report</h2><label for="report-title">Report title</label><input id="report-title" name="report-title" autocomplete="off"><button data-tour="save-report" id="save-report">Save draft</button><p id="saved" hidden>Draft saved</p><button id="close-dialog">Close</button></dialog>
+<div class="scroll"><div class="spacer"></div><button id="nested-target">Nested target</button></div>
+<button class="duplicate">Duplicate A</button><button class="duplicate">Duplicate B</button><button id="hidden-target" hidden>Hidden target</button><div id="late-container"></div>
+<script>
+document.getElementById('new-report').addEventListener('click',()=>document.getElementById('editor').showModal());
+document.getElementById('save-report').addEventListener('click',()=>{document.getElementById('saved').hidden=false});
+document.getElementById('close-dialog').addEventListener('click',()=>document.getElementById('editor').close());
+</script></body></html>

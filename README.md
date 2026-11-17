@@ -12,6 +12,8 @@ LLM workflows. Most skill instructions are written in Thai.
 | `handoff-other-llm` | Summarises project and session state into `HANDOFF.md` so another coding agent (Codex, Cursor, Gemini CLI, Antigravity) can continue immediately. Scans for secrets before writing. |
 | `presentation-creator` | Builds PowerPoint decks in four house styles with a pre-build menu (style, purpose, audience, tone, palette). Uses the `pptx` skill to produce the file. |
 | `real-human-tester` | Role-plays imperfect real users on a web or mobile app, one role at a time, then gives feedback or fixes the app. |
+| `ux-ui-partner` | Senior UX/UI design partner: critiques screens and flows against named principles, and designs new features as clickable HTML mockups before any production code. |
+| `web-app-tutorial-creator` | Builds evidence-grounded Thai or English tutorials for web apps (Word documents, annotated screenshots, live in-page guided tours, offline previews) from URLs, source, screenshots, or a `steps.json`. |
 
 ## Install
 
@@ -39,6 +41,11 @@ Settings → Capabilities → Skills.
   made up. Icons are from Font Awesome Free (CC BY 4.0).
 - `real-human-tester` creates and submits data in the app under test. Use test
   accounts and obviously fake data, and never point it at a production system.
+- `web-app-tutorial-creator` includes Python scripts. Install their
+  dependencies with `pip install -r requirements.txt` (Python 3.10+, Pillow,
+  python-docx, jsonschema). Review screenshots for personal data before
+  sharing a tutorial; the built-in sensitive-text check is a heuristic, not
+  OCR.
 - These skills give reasoning support, not medical or public-health
   authority. Verify outputs against your own guidelines.
 

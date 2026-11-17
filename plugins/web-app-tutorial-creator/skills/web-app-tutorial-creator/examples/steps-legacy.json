@@ -1,0 +1,13 @@
+{
+  "title": "Legacy guide",
+  "language": "english",
+  "color": "blue",
+  "steps": [
+    {
+      "number": 1,
+      "caption": "Click New report.",
+      "selector": "#new-report",
+      "tooltip_position": "bottom"
+    }
+  ]
+}
