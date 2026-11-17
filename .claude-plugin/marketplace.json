@@ -1,0 +1,36 @@
+{
+  "name": "mumi-skills",
+  "owner": {
+    "name": "mumiman"
+  },
+  "metadata": {
+    "description": "Claude skills for field epidemiology, presentations, brainstorming, agent handoff, and human-style app testing (mostly Thai)."
+  },
+  "plugins": [
+    {
+      "name": "brainstorm",
+      "source": "./plugins/brainstorm",
+      "description": "ระดมสมองหลายมุมมอง: เสนอไอเดียที่ต่างกันจริง ถกเถียงจุดแข็ง-จุดอ่อน แล้วแตกเป็นชิ้นส่วนให้ผู้ใช้เลือกผสมเป็น solution ใช้เมื่อผู้ใช้พูดว่า brainstorm, ระดมสมอง, ช่วยคิดไอเดีย, หาทางเลือก หรือ /brainstorm"
+    },
+    {
+      "name": "field-epidemiologist",
+      "source": "./plugins/field-epidemiologist",
+      "description": "สวมบทนักระบาดวิทยาภาคสนามอาวุโสที่ใจเย็นและขี้สงสัยเรื่องสาเหตุ ใช้ตรวจร่างรายงานสอบสวนโรคหรือแบบประเมินความเสี่ยงเหตุการณ์ และช่วยคิดสอบสวนเหตุการณ์ใหม่ จนได้มาตรการที่มีหน่วยงาน ระยะเวลา และเกณฑ์ยุติ ใช้ทุกครั้งที่ผู้ใช้พูดถึง สอบสวนโรค การระบาด outbreak cluster กลุ่มก้อน ผู้ป่วยสงสัย ผู้เสียชีวิตที่ต้องสอบสวน รายงานสอบสวน ตรวจรายงาน risk assessment ของเหตุการณ์ มาตรการควบคุมโรค attack rate epi curve นิยามผู้ป่วย SAT JIT หรือส่งร่างรายงานและข้อมูลเหตุการณ์มาให้ช่วยดู แม้ไม่เอ่ยคำว่าระบาดวิทยา "
+    },
+    {
+      "name": "handoff-other-llm",
+      "source": "./plugins/handoff-other-llm",
+      "description": "สรุปสถานะโปรเจคและ session เป็น HANDOFF.md ให้ LLM/coding agent ตัวอื่น (Codex, Antigravity, Cursor, Gemini CLI) ทำงานต่อได้ทันที ใช้ทุกครั้งที่ผู้ใช้ต้องการส่งต่องานให้ LLM/agent อื่น, ขอสรุป session เพื่อทำต่อที่อื่น, หรือพูดว่า \"handoff\", \"hand off\", \"ส่งต่องาน\", \"สรุปให้ Codex ทำต่อ\", \"ย้ายไปทำต่อใน Cursor\" แม้ไม่ได้เอ่ยชื่อ skill"
+    },
+    {
+      "name": "presentation-creator",
+      "source": "./plugins/presentation-creator",
+      "description": "สร้างงานนำเสนอ PowerPoint (.pptx) ตามสไตล์ประจำตัวของผู้ใช้ 4 แบบ (รายงานสอบสวน, ป้ายหมวด, แถบนำทาง, ป้ายเฉียง) พร้อมเมนูตัวเลือกก่อนสร้าง: สไตล์ ลักษณะงาน (Academic/Teaching/Casual) ผู้ฟัง Mood & tone และชุดสี ใช้ทุกครั้งที่ผู้ใช้ขอ presentation, slide deck, slides, สไลด์, PowerPoint, .pptx, งานนำเสนอ, เด็ค, outbreak presentation, journal club, บรรยาย, อบรม, executive briefing, pitch หรือส่งเอกสารมาให้ทำสไลด์ แม้ไม่ระบุสไตล์ skill นี้วางเนื้อหาและดีไซน์ แล้วใช้ skill pptx สร้างไฟล์ ไม่ใช้กับการ"
+    },
+    {
+      "name": "real-human-tester",
+      "source": "./plugins/real-human-tester",
+      "description": "สวมบทเป็น \"คน\" ที่ไม่ perfect เข้าใช้ Web/Mobile app จริงทีละบทบาท แล้วให้ feedback หรือแก้แอปต่อเลย ใช้เมื่อผู้ใช้ขอทดสอบแอปในมุมผู้ใช้ ลองใช้แอปแทนผู้ใช้ ขอ feedback จากผู้ใช้จำลอง usability test หรือพิมพ์ /real-human-tester"
+    }
+  ]
+}
