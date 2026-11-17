@@ -31,11 +31,12 @@ Settings → Capabilities → Skills.
 
 ## Notes
 
-- `presentation-creator` refers to four template files
-  (`Template_OutbreakReport.pptx`, `Template_SectionTab.pptx`,
-  `Template_NavTabs.pptx`, `Template_Slant.pptx`) that are not included. The
-  skill still works from the style specs in `SKILL.md`; attach a template if
-  you have one.
+- `presentation-creator` ships one example deck per style in
+  [`templates/`](plugins/presentation-creator/skills/presentation-creator/templates/):
+  `Template_OutbreakReport.pptx`, `Template_SectionTab.pptx`,
+  `Template_NavTabs.pptx`, and `Template_Slant.pptx`. They are built around a
+  fictional school food-poisoning outbreak; all names, places, and numbers are
+  made up. Icons are from Font Awesome Free (CC BY 4.0).
 - `real-human-tester` creates and submits data in the app under test. Use test
   accounts and obviously fake data, and never point it at a production system.
 - These skills give reasoning support, not medical or public-health

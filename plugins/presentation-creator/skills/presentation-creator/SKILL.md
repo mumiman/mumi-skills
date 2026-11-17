@@ -131,7 +131,7 @@ description: "สร้างงานนำเสนอ PowerPoint (.pptx) ต�
 
 ## สี่สไตล์
 
-หน่วยเป็นนิ้ว สีเป็น hex ไฟล์ตัวอย่างของแต่ละสไตล์คือ `Template_OutbreakReport.pptx`, `Template_SectionTab.pptx`, `Template_NavTabs.pptx`, `Template_Slant.pptx` ถ้าผู้ใช้แนบไฟล์ตัวอย่างมา ให้เปิดดูและทำตามไฟล์นั้นก่อนสเปกในนี้
+หน่วยเป็นนิ้ว สีเป็น hex ไฟล์ตัวอย่างของแต่ละสไตล์คือ `Template_OutbreakReport.pptx`, `Template_SectionTab.pptx`, `Template_NavTabs.pptx`, `Template_Slant.pptx` อยู่ในโฟลเดอร์ `templates/` ข้างไฟล์นี้ (ข้อมูลในไฟล์เป็นข้อมูลสมมติ) ให้เปิดดูไฟล์ของสไตล์ที่เลือกก่อนสร้าง ถ้าผู้ใช้แนบไฟล์ตัวอย่างมาเอง ให้ทำตามไฟล์ของผู้ใช้ก่อน แล้วจึงตามสเปกในนี้
 
 ### รายงานสอบสวน
 
